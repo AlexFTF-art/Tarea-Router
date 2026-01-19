@@ -18,6 +18,10 @@ const Dashboard = () => {
           Settings
         </NavLink>
 
+        <NavLink to='users' style={({ isActive }) => ({fontWeight: isActive ? 'bold' : 'normal'})}>
+          Users
+        </NavLink>
+        
       </nav>
       <Outlet />
     </div>
