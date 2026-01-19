@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Users from './pages/User'
+import Users from './pages/User/User'
 import UserDetail from './pages/UserDetail'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Profile from './pages/Profile'
 import Settings from './pages/Settings'
-import Dashboard from './pages/Dashboard'
+import Dashboard from './pages/Dashboard/Dashboard'
 import './App.css'
 
 function App() {

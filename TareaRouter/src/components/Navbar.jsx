@@ -1,20 +1,14 @@
 import { NavLink } from "react-router-dom";
+import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <nav>
-      <NavLink to='/' style={({isActive}) => ({fontWeight: isActive ? 'bold' : 'normal'})}> 
-        Home 
-      </NavLink> {'|'}
+    <nav className="nav-container">
+      <NavLink to='/'> Home </NavLink> {'|'}
 
-      <NavLink to="/login" style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal'})}>
-        Login
-      </NavLink>
-      {' | '}
+      <NavLink to="/login"> Login </NavLink> {' | '}
 
-      <NavLink to="/dashboard" style={({ isActive }) => ({fontWeight: isActive ? 'bold' : 'normal'})}>
-        Dashboard
-      </NavLink>
+      <NavLink to="/dashboard"> Dashboard </NavLink>
 
     </nav>
   )
