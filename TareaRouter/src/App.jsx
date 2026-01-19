@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Users from './pages/User'
+import UserDetail from './pages/UserDetail'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Login from './pages/Login'
@@ -22,6 +24,11 @@ function App() {
           <Route index element={<p>Dashboard</p>}/>
           <Route path='profile'  element={<Profile />}/>
           <Route path='settings'  element={<Settings />}/>
+
+          <Route path='users' element={<Users />}>
+            <Route path=':id' element={<UserDetail />}/>
+          </Route>
+
         </Route>
 
         <Route path='*'  element={<h2>Pagina no encontrada</h2>}/>
