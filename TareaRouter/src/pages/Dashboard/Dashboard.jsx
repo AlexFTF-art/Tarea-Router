@@ -1,26 +1,19 @@
 import { Outlet, NavLink } from "react-router-dom";
+import './Dashboard.css'
 
 const Dashboard = () => {
   return (
-    <div>
-      <h1>Dashboard</h1>
+    <div className="dash-container">
+      <h1 className="dash-title">Dashboard</h1>
 
-      <nav>
-        <NavLink to='' end style={({ isActive }) => ({fontWeight: isActive ? 'bold' : 'normal'})}>
-          Home
-        </NavLink>
+      <nav className="dash-nav">
+        <NavLink to='' end> Home </NavLink>
 
-        <NavLink to='profile' end style={({ isActive }) => ({fontWeight: isActive ? 'bold' : 'normal'})}> 
-          Profile
-        </NavLink>
+        <NavLink to='profile'>  Profile </NavLink>
 
-        <NavLink to='settings' end style={({ isActive }) => ({fontWeight: isActive ? 'bold' : 'normal'})}>
-          Settings
-        </NavLink>
+        <NavLink to='settings'> Settings </NavLink>
 
-        <NavLink to='users' style={({ isActive }) => ({fontWeight: isActive ? 'bold' : 'normal'})}>
-          Users
-        </NavLink>
+        <NavLink to='users'> Users </NavLink>
         
       </nav>
       <Outlet />

@@ -1,0 +1,25 @@
+.dash-container {
+  padding: 20px;
+}
+
+.dash-title {
+  margin-bottom: 15px;
+}
+
+.dash-nav {
+  background-color: floralwhite;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.dash-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.dash-nav a.active {
+  font-weight: bold;
+  color: dodgerblue;
+}
