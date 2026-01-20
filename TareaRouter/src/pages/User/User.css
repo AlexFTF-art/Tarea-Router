@@ -1,0 +1,25 @@
+.user-container {
+  margin-top: 10px;
+}
+
+.user-title {
+  margin-bottom: 10px;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-list li {
+  margin-bottom: 10px;
+}
+
+.user-list a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.user-list a:hover {
+  text-decoration: underline;
+}

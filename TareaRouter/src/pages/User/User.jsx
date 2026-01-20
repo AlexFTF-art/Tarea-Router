@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import './User.css'
 
 const users = [
   {id: 1, name: 'alex'},
@@ -8,11 +9,11 @@ const users = [
 
 const Users = () => {
   return (
-    <div>
+    <div className="user-container">
 
-      <h2>Usuarios</h2>
+      <h2 className="user-title">Usuarios</h2>
 
-      <ul>
+      <ul className="user-list">
         {users.map(user => (
           <li key={user.id}>
             <Link to={`${user.id}`}>
